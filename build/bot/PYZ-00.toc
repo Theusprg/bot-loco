@@ -1,4 +1,4 @@
-('C:\\Users\\draga\\Desktop\\bot-loco\\build\\bot\\PYZ-00.pyz',
+('C:\\Users\\draga\\Desktop\\bot-loco 1.01 beta\\build\\bot\\PYZ-00.pyz',
  [('__future__',
    'C:\\Users\\draga\\AppData\\Local\\Programs\\Python\\Python310\\lib\\__future__.py',
    'PYMODULE'),
