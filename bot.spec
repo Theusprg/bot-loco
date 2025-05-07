@@ -5,7 +5,7 @@ a = Analysis(
     ['bot.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('icone.ico', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -37,4 +37,3 @@ exe = EXE(
     entitlements_file=None,
     icon=['icone.ico'],
 )
-
