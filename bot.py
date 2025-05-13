@@ -59,11 +59,11 @@ class BotApp(QWidget):
 
         self.min_time_entry = QLineEdit()
         self.min_time_entry.setPlaceholderText("Tempo mínimo (segundos)")
-        self.min_time_entry.setText("60")
+        self.min_time_entry.setText("7200")
 
         self.max_time_entry = QLineEdit()
         self.max_time_entry.setPlaceholderText("Tempo máximo (segundos)")
-        self.max_time_entry.setText("90")
+        self.max_time_entry.setText("9000")
 
         layout.addWidget(self.link_entry)
         layout.addWidget(self.min_time_entry)
@@ -176,12 +176,12 @@ class BotApp(QWidget):
                     frase = choice(self.frases)
                     tempo = uniform(self.min_time, self.max_time)
 
-                    caixa_texto = self.driver.find_element(By.XPATH, "//input[@class='css-1epp86n e5o5bse0']")
+                    caixa_texto = self.driver.find_element(By.XPATH, "//input[@class='sc-85b006bf-9 sc-85b006bf-10 bdHfkr ccLuvL']")
                     caixa_texto.clear()
                     caixa_texto.send_keys(frase)
                     time.sleep(0.5)
 
-                    botao = self.driver.find_element(By.XPATH, "//button[@class='css-mqythl']")
+                    botao = self.driver.find_element(By.XPATH, "//button[@class='sc-85b006bf-14 kpIrnM']")
                     botao.click()
 
                     time.sleep(tempo)
