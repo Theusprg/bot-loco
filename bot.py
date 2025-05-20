@@ -176,12 +176,12 @@ class BotApp(QWidget):
                     frase = choice(self.frases)
                     tempo = uniform(self.min_time, self.max_time)
 
-                    caixa_texto = self.driver.find_element(By.XPATH, "//input[@class='sc-85b006bf-9 sc-85b006bf-10 bdHfkr ccLuvL']")
+                    caixa_texto = self.driver.find_element(By.XPATH, "//input[@class='sc-ce276f5e-9 sc-ce276f5e-10 HIoRu gnZNrS loco-chat-input']")
                     caixa_texto.clear()
                     caixa_texto.send_keys(frase)
                     time.sleep(0.5)
 
-                    botao = self.driver.find_element(By.XPATH, "//button[@class='sc-85b006bf-14 kpIrnM']")
+                    botao = self.driver.find_element(By.XPATH, "//button[@class='sc-ce276f5e-14 gqvoTb loco-chat-input-send-button']")
                     botao.click()
 
                     time.sleep(tempo)
